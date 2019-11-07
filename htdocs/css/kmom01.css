@@ -5,6 +5,28 @@
  * to style up the website so it is useable.
  */
 
+/* Poor man normalize */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #b8c8b9;
+    color: #000;
+    font-family: sans-serif;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +35,107 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+/* Header */
+.outer-wrap-header {
+    background-color: #154918;
+    color: #f8fafa;
+    overflow: auto;
+}
+
+.inner-wrap-header {
+    padding: 30px 0;
+}
+
+.region-header-col-1 {
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 2px 10px;
+}
+
+/* Container */
+.outer-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.row::after {
+    clear: both;
+}
+
+/* Main */
+.inner-wrap-main {
+    max-width: 900px;
+    padding: 30px 0;
+}
+
+/* Footer */
+.outer-wrap-footer {
+    background-color: #154918;
+    clear: both;
+    color: #eaefea;
+}
+
+.inner-wrap-footer {
+    padding: 30px 0;
+}
+
+.region-footer > .block {
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Fig */
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* State */
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bold;
 }
