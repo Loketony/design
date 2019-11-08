@@ -91,7 +91,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 <div class="outer-wrap outer-wrap-header">
     <div class="inner-wrap inner-wrap-header">
         <div class="row">
-            <header class="region-header" role="banner">
+            <header class="region-header">
                 <!-- header -->
                 <?php if (regionHasContent("header")) : ?>
                 <div class="region-header-col-1">
@@ -223,7 +223,7 @@ $class .= empty($class) ? "" : "has-sidebar";
             <?php endif; ?>
 
             <?php if (regionHasContent("main")) : ?>
-            <main class="region-main <?= $class ?>" role="main">
+            <main class="region-main <?= $class ?>">
                 <?php renderRegion("main") ?>
             </main>
             <?php endif; ?>

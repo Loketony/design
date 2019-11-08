@@ -19,8 +19,8 @@ return [
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-                "css/dbwebb-se.min.css",
-                //"css/kmom01.css",
+                //"css/dbwebb-se.min.css",
+                "css/kmom01.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
@@ -65,34 +65,12 @@ return [
         ],
         [
             "region" => "footer",
-            "template" => "anax/v2/columns/multiple_columns",
-            "data" => [
-                "class"  => "footer-column",
-                "columns" => [
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-1",
-                    ],
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-2",
-                    ],
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-3",
-                    ]
-                ]
-            ],
-            "sort" => 1
-        ],
-        [
-            "region" => "footer",
             "template" => "anax/v2/block/default",
             "data" => [
                 "class"  => "site-footer",
                 "contentRoute" => "block/footer",
             ],
-            "sort" => 2
+            "sort" => 1
         ],
     ],
 ];

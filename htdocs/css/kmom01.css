@@ -23,8 +23,29 @@ body {
     font-family: sans-serif;
 }
 
-p {
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.25rem;
+}
+
+p, pre {
     margin-bottom: 1rem;
+}
+
+ol, ul, dl {
+    list-style-position: inside;
+}
+
+hr {
+    background-color: lightgrey;
+    border: none;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 /* Hide submenu, leave this to kmom02 */
@@ -73,6 +94,11 @@ p {
     padding: 2px 10px;
 }
 
+/* Flash */
+.inner-wrap-flash {
+    text-align: center;
+}
+
 /* Container */
 .outer-wrap {
     width: 100%;
@@ -87,10 +113,58 @@ p {
     clear: both;
 }
 
+.has-sidebar-right {
+    float: left;
+    margin-right: 3%;
+    width: 77%;
+}
+
+.has-sidebar-left {
+    float: left;
+    margin-left: 3%;
+    width: 77%;
+}
+
+/* Navigation */
+.breadcrumb-list > ul > li {
+    display: inline;
+    font-size: 0.8rem;
+}
+
+.breadcrumb-list > ul > li:not(:last-of-type)::after {
+    content: ' > ';
+}
+
+.toc > li {
+    font-size: 0.8rem;
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+.next-previous {
+    clear: both;
+}
+
+.next-previous > div {
+    float: right;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.next {
+    text-align: right;
+}
+
 /* Main */
 .inner-wrap-main {
     max-width: 900px;
     padding: 30px 0;
+}
+
+.article {
+    clear: both;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -104,10 +178,13 @@ p {
     padding: 30px 0;
 }
 
-.region-footer > .block {
-    padding-top: 30px;
-    text-align: center;
-    width: 100%;
+.region-footer {
+    column-count: 3;
+    column-gap: 3rem;
+    column-rule: 1px solid lightgrey;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 /* Fig */
@@ -115,6 +192,20 @@ figcaption {
     font-size: 0.8rem;
     font-style: italic;
     margin-bottom: 1rem;
+}
+
+/* Blocks */
+.region-sidebar-right {
+    font-size: 0.9rem;
+    margin-right: 0;
+    width: 20%;
+}
+
+.region-sidebar-left {
+    float: left;
+    font-size: 0.9rem;
+    margin-left: 0;
+    width: 20%;
 }
 
 /* State */
@@ -134,8 +225,4 @@ figcaption {
 
 a {
     color: inherit;
-}
-
-a:hover {
-    font-weight: bold;
 }

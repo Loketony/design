@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-kursrepo
 
@@ -12,17 +12,14 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-redovisa
 ---
-Om
-=========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+[FIGURE src=image/filmkatter.jpg?w=200 class="left" caption="Sajten är också lämplig för katter."]
 
-Skriv några kloka ord om kursen?
+# Om denna webbplats
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+Webbplatsen är skapad i kursen **Teknisk webbdesign och användbarhet** eller ***design*** på [BTH](https://bth.se) -
+*Blekinge Tekniska Högskola*.

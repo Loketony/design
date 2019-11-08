@@ -1,3 +1,3 @@
-#### Redovisa på GitHub
+#### Webbplatsen på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+[Källkoden på GitHub](https://github.com/Loketony/design)
