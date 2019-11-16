@@ -1,0 +1,25 @@
+/** --------------------------------------------------------------
+ * Breadcrumb
+ */
+.breadcrumb-list ul,
+.bullet-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumb-list li,
+.bullet-list li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb-list li::after,
+.bullet-list li::after {
+  content: " » ";
+}
+.bullet-list li::after {
+  content: " • ";
+}
+.bullet-list li:last-child::after {
+  content: "";
+}

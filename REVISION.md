@@ -1,5 +1,14 @@
 # Revision history
 
+### v2.0.0 (2019-11-13--16)
+* Add `theme`-folder; Move CSS-src-files here
+* Use **LESS** for CSS-files
+* Add `kmom02.min.css` and change to default CSS in: `config/page.php`
+* Change Nginx @dev from localhost to `dev.student.bth.se`
+* Make CSS responsive - split up to Base, Block, Part, or Layout-files
+* Lot's of CSS design changes
+* Changes in `view/anax/v2`; breadcrumb, header, layout, next-previous
+
 ### v1.0.0 (2019-11-08)
 * Add content to Start, About, Test (new page)
 * Style & content to blocks: Navbar, Flash, Footer

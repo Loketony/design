@@ -11,7 +11,7 @@ namespace Anax\View;
 
 
 
-?><nav class="breadcrumb-list" role="navigation">
+?><nav class="breadcrumb-list">
     <?php
     renderView(__DIR__ . "/../link-list/default", [
         "links" => $breadcrumb

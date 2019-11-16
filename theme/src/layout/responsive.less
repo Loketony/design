@@ -1,0 +1,28 @@
+/* Layout for responsive style through media queries */
+
+// Screens smaller then 650px
+@media screen and (max-width: 650px) {
+    .region-header-col-2 {
+        display: none;
+        width: 0;
+    }
+    .region-header-col-1 {
+        width: 95%;
+    }
+    .wrap-sidebar {
+        display: none;
+        width: 0;
+    }
+    .region-main {
+        width: 100%;
+    }
+    .region-footer {
+        column-gap: 1rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    .rm-navbar-max {
+        display: block;
+    }
+}

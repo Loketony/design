@@ -20,8 +20,8 @@ $nextTitle = $next["title"];
 $prevTitle = $previous["title"];
 
 if (isset($nextPreviousTitle) && $nextPreviousTitle === false) {
-    $nextTitle = t("Next");
-    $prevTitle = t("Previous");
+    $nextTitle = t("Nästa");
+    $prevTitle = t("Bakåt");
 }
 
 

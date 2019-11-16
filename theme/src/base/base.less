@@ -1,0 +1,106 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #b8c8b9;
+@colorBody: #000;
+@colorRulers: lightgrey;
+@fontFamilyBody: sans-serif;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.4;
+    overflow: auto;
+    width: 100%;
+}
+
+body {
+    background-color: @bgColorBody;
+    color: @colorBody;
+    font-family: @fontFamilyBody;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.25rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+pre, code {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol, ul, dl {
+    list-style-position: inside;
+}
+
+hr {
+    background-color: @colorRulers;
+    border: none;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+select {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+table {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+td {
+    padding: 0.4rem;
+}

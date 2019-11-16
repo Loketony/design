@@ -1,0 +1,39 @@
+/** --------------------------------------------------------------
+ * Next and previous navigation.
+ */
+.next-previous {
+  margin-bottom: 24px;
+}
+.next-previous .next,
+.next-previous .previous {
+  width: 50%;
+}
+.next-previous .next {
+  float: right;
+  text-align: right;
+}
+.blog-toc-next-prev-page {
+  margin-bottom: 24px;
+}
+.blog-toc-next-prev-page .next,
+.blog-toc-next-prev-page .previous,
+.blog-toc-next-prev-page .center {
+  width: 33%;
+}
+.blog-toc-next-prev-page .previous {
+  float: left;
+}
+.blog-toc-next-prev-page .next {
+  float: right;
+  text-align: right;
+}
+.blog-toc-next-prev-page .center {
+  float: right;
+  text-align: center;
+}
+.next-previous::after,
+.blog-toc-next-prev-page::after {
+  content: "";
+  display: block;
+  clear: both;
+}

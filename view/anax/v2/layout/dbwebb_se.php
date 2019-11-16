@@ -126,7 +126,6 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 <?php endif; ?>
 
 
-
 <!-- navbar -->
 <?php if (regionHasContent("navbar")) : ?>
 <div class="outer-wrap outer-wrap-navbar">
@@ -141,6 +140,8 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 <?php endif; ?>
 
 
+<!-- content START -->
+<div class="content">
 
 <!-- flash -->
 <?php if (regionHasContent("flash")) : ?>
@@ -269,6 +270,9 @@ $class .= empty($class) ? "" : "has-sidebar";
 <?php endif; ?>
 
 
+<!-- content END -->
+</div>
+
 
 <!-- sitefooter -->
 <?php if (regionHasContent("footer")) : ?>
@@ -284,9 +288,7 @@ $class .= empty($class) ? "" : "has-sidebar";
 <?php endif; ?>
 
 
-
 </div> <!-- end of wrapper -->
-
 
 
 <!-- render javascripts -->

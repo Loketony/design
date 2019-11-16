@@ -1,0 +1,413 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/* Poor man normalize */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+html {
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #154918;
+    color: #000;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.25rem;
+}
+
+p, pre {
+    margin-bottom: 1rem;
+}
+
+ol, ul, dl {
+    list-style-position: inside;
+}
+
+hr {
+    background-color: lightgrey;
+    border: none;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+*/
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+/* Header */
+.outer-wrap-header {
+  background-color: #154918;
+  color: #f8fafa;
+  overflow: auto;
+}
+.inner-wrap-header {
+  padding: 30px 0;
+}
+.region-header-col-1 {
+  float: left;
+  margin-right: 10px;
+  width: 30%;
+}
+.region-header-col-2 {
+  float: left;
+  width: 60%;
+}
+.site-logo {
+  display: none;
+}
+.my-navbar {
+  list-style-type: none;
+  padding-top: 10px;
+}
+.my-navbar li {
+  display: inline;
+  padding: 2px 10px;
+}
+/* Flash */
+.inner-wrap-flash {
+  text-align: center;
+}
+/* Container */
+.outer-wrap {
+  width: 100%;
+}
+.inner-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+.row::after {
+  clear: both;
+}
+.has-sidebar-right {
+  float: left;
+  margin-right: 3%;
+  width: 77%;
+}
+.has-sidebar-left {
+  float: left;
+  margin-left: 3%;
+  width: 77%;
+}
+/* Navigation */
+.breadcrumb-list > ul > li {
+  display: inline;
+  font-size: 0.8rem;
+}
+.breadcrumb-list > ul > li:not(:last-of-type)::after {
+  content: ' > ';
+}
+.toc > li {
+  font-size: 0.8rem;
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+.next-previous {
+  clear: both;
+}
+.next-previous > div {
+  float: right;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  width: 50%;
+}
+.next {
+  text-align: right;
+}
+/* Main */
+.inner-wrap-main {
+  max-width: 900px;
+  padding: 30px 0;
+}
+.article {
+  clear: both;
+  margin-bottom: 1rem;
+}
+/* Footer */
+.outer-wrap-footer {
+  background-color: #154918;
+  clear: both;
+  color: #eaefea;
+}
+.inner-wrap-footer {
+  padding: 30px 0;
+}
+.region-footer {
+  column-count: 3;
+  column-gap: 3rem;
+  column-rule: 1px solid lightgrey;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+/* Fig */
+figcaption {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+/* Blocks */
+.region-sidebar-right {
+  font-size: 0.9rem;
+  margin-right: 0;
+  width: 20%;
+}
+.region-sidebar-left {
+  float: left;
+  font-size: 0.9rem;
+  margin-left: 0;
+  width: 20%;
+}
+/* State */
+.clear {
+  clear: both;
+}
+.left {
+  float: left;
+  margin-right: 10px;
+}
+.right {
+  float: right;
+  margin-left: 10px;
+}
+a {
+  color: inherit;
+}
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  overflow: auto;
+  width: 100%;
+}
+body {
+  background-color: #b8c8b9;
+  color: #000;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.25rem;
+}
+h1 {
+  font-size: 1.8rem;
+}
+p {
+  margin: 0 0 1rem;
+}
+pre,
+code {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+img {
+  max-width: 100%;
+}
+ol,
+ul,
+dl {
+  list-style-position: inside;
+}
+hr {
+  background-color: lightgrey;
+  border: none;
+  height: 1px;
+  margin-bottom: 1rem;
+}
+blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+figcaption {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+a {
+  color: inherit;
+}
+fieldset {
+  margin-bottom: 1rem;
+}
+select {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+table {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 0.8rem;
+  text-align: left;
+}
+tr {
+  vertical-align: middle;
+}
+td {
+  padding: 0.4rem;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/* Layout style for general structure of header, navbar, main, footer
+   and other regions of the page including route specific styles. */
+.wrap-all {
+  min-width: 300px;
+}
+.outer-wrap {
+  min-width: 300px;
+  width: 100%;
+}
+.outer-wrap-main {
+  z-index: -99;
+}
+.content {
+  margin-top: 3rem;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.inner-wrap {
+  margin: 0 auto 0 2%;
+  max-width: 900px;
+  width: 96%;
+}
+.has-sidebar-left,
+.has-sidebar-right {
+  float: left;
+  width: 80%;
+}
+.row {
+  width: 100%;
+}
+.row::after {
+  clear: both;
+}
+.article {
+  clear: both;
+  margin-bottom: 1rem;
+}
+/* Layout for responsive style through media queries */
+@media screen and (max-width: 650px) {
+  .region-header-col-2 {
+    display: none;
+    width: 0;
+  }
+  .region-header-col-1 {
+    width: 95%;
+  }
+  .wrap-sidebar {
+    display: none;
+    width: 0;
+  }
+  .region-main {
+    width: 100%;
+  }
+  .region-footer {
+    column-gap: 1rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .rm-navbar-max {
+    display: block;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/*
+    .region-footer-column-1,
+    .region-footer-column-2,
+    .region-footer-column-3
+    */
+/**
+ * My own settings, not currently in their own module.
+ */

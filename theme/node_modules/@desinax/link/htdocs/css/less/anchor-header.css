@@ -1,0 +1,25 @@
+/** --------------------------------------------------------------
+ * Anchor for headers with id
+ */
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor {
+  display: block;
+}
+.header-anchor {
+  display: none;
+  position: relative;
+  float: right;
+  color: #ccc;
+  margin-left: -1em;
+  text-decoration: none;
+}
+.header-anchor:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  .header-anchor {
+    display: block;
+    color: #ddd;
+  }
+}

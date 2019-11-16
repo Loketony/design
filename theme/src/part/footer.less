@@ -1,0 +1,40 @@
+.outer-wrap-footer {
+    background-color: @bgColorNav;
+    clear: both;
+    color: @colorLowerNav;
+}
+
+.inner-wrap-footer {
+    padding: 1rem 0;
+}
+
+.region-footer {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 1px solid @colorRulers;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    max-width: 900px;
+    img {
+        float: right;
+        margin: 0 -5px 0 5px;
+        max-width: 100px;
+        width: 50%;
+    }
+}
+
+div.site-footer > h4 {
+    display: inline;
+}
+
+div.site-footer > h4 ~ h4 {
+    white-space: pre;
+}
+
+div.site-footer > h4::before {
+    content: '\A';
+}
+
+div.site-footer > p {
+    display: inline;
+}

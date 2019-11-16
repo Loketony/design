@@ -1,0 +1,31 @@
+/**
+ * File level comment.
+ */
+
+/**
+ * Block comment
+ */
+body {
+    color: black;
+}
+
+
+body {
+    /* Inline block comment */
+    color: black;
+}
+
+body {
+    /* Inline block comment */
+    color: black;
+
+    /* Inline block comment */
+    background-color: white;
+}
+
+body {
+    color: black;
+    background-color: white;
+
+    /* color: black; */
+}

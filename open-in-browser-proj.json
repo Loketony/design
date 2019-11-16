@@ -1,6 +1,6 @@
 {
     "localhost": {
-        "url": "http://localhost/design",
+        "url": "http://dev.student.bth.se/design",
         "folder": "/Users/micke/Sites/dbwebb/design"
     }
 }

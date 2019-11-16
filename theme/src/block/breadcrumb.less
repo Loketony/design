@@ -1,0 +1,18 @@
+// Breadcrumb
+.region-breadcrumb {
+    margin-bottom: 0.5rem;
+}
+
+.breadcrumb-list > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-list > ul > li {
+    display: inline;
+    font-size: 0.8rem;
+}
+
+.breadcrumb-list > ul > li:not(:last-of-type)::after {
+    content: ' > ';
+}

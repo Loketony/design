@@ -1,0 +1,50 @@
+/* Stylesheet for design kmom02 */
+
+ /* 1. Normalize and reset */
+@import "normalize.css/normalize.less";
+
+/* 2. Third Party CSS */
+// A responsive menu.
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/* 3. Fonts */
+// Font Awesome
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+//@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/* 4. Internal self contained modules */
+//@import "module/stylechooser.less";  // An example module
+
+/* 5. Base style for HTML elements on a general scale */
+@import "base/base.less";
+
+/* 6. Mixins */
+//@import "mixin/clearfix.less";
+
+/* 7. Typography (fonts, colors, GUI) */
+//@import "typography/typography.less";
+
+/* 8. Layout styles for general structure of header, navbar, main, footer
+      and other regions of the page including route specific styles. */
+@import "layout/layout.less";
+@import "layout/regions.less";
+
+/* 9. Parts */
+@import "part/header.less";
+@import "part/navigation.less";
+@import "part/main.less";
+@import "part/footer.less";
+
+/* 10. Blocks */
+@import "block/logo.less";
+@import "block/flash.less";
+@import "block/sidebar.less";
+@import "block/breadcrumb.less";
+@import "block/next-previous.less";
+@import "block/toc.less";
+
+/* 11. State & Media queries for responsive design. */
+@import "layout/responsive.less";
+@import "base/state.less";
