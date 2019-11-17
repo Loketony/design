@@ -531,25 +531,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
 }
-/**
- * Style for responsive menu
- */
-/**
-  * Example on media queries
-  */
-@media screen and (max-width: 680px) {
-  .rm-small {
-    display: block;
-  }
-  .rm-desktop {
-    display: none;
-  }
-}
-@media screen and (min-width: 680px) {
-  .rm-small {
-    display: none;
-  }
-}
 /* 3. Fonts */
 /*!
  * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
@@ -5141,12 +5122,6 @@ td {
 .region-header-col-3 {
   width: 5%;
 }
-.rm-navbar {
-  height: 100%;
-}
-.rm-navbar-max {
-  display: none;
-}
 .my-navbar {
   align-items: center;
   display: flex;
@@ -5164,6 +5139,12 @@ td {
 .my-navbar > li > ul > li {
   background-color: black;
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
+}
+.rm-navbar {
+  height: 100%;
+}
+.rm-small {
+  display: none !important;
 }
 #rm-menu {
   max-width: 320px;
@@ -5205,7 +5186,7 @@ td {
 .region-footer img {
   float: right;
   margin: 0 -5px 0 5px;
-  max-width: 100px;
+  max-width: 70px;
   width: 50%;
 }
 div.site-footer > h4 {
@@ -5324,14 +5305,14 @@ ul.toc {
 /* Layout for responsive style through media queries */
 @media screen and (max-width: 650px) {
   .region-header-col-2 {
-    display: none;
+    display: none !important;
     width: 0;
   }
   .region-header-col-1 {
     width: 95%;
   }
   .wrap-sidebar {
-    display: none;
+    display: none !important;
     width: 0;
   }
   .region-main {
@@ -5343,8 +5324,11 @@ ul.toc {
   h1 {
     font-size: 1.6rem;
   }
-  .rm-navbar-max {
-    display: block;
+  .rm-small {
+    display: block !important;
+  }
+  .rm-desktop {
+    display: none !important;
   }
 }
 .clear {

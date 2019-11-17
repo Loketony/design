@@ -1,5 +1,10 @@
 # Revision history
 
+### v2.0.1 (2019-11-17)
+* Add report text kmom02
+* CSS bug fixes; errors found @dbwebb using W3C-validator
+* Clean up responsive media-queries; don't use example query 
+
 ### v2.0.0 (2019-11-13--16)
 * Add `theme`-folder; Move CSS-src-files here
 * Use **LESS** for CSS-files

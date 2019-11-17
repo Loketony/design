@@ -352,14 +352,14 @@ td {
 /* Layout for responsive style through media queries */
 @media screen and (max-width: 650px) {
   .region-header-col-2 {
-    display: none;
+    display: none !important;
     width: 0;
   }
   .region-header-col-1 {
     width: 95%;
   }
   .wrap-sidebar {
-    display: none;
+    display: none !important;
     width: 0;
   }
   .region-main {
@@ -371,8 +371,11 @@ td {
   h1 {
     font-size: 1.6rem;
   }
-  .rm-navbar-max {
-    display: block;
+  .rm-small {
+    display: block !important;
+  }
+  .rm-desktop {
+    display: none !important;
   }
 }
 /**
