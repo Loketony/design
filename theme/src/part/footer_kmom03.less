@@ -2,37 +2,39 @@
     background-color: @bgColorNav;
     clear: both;
     color: @colorLowerNav;
+    overflow: hidden;
 }
 
 .inner-wrap-footer {
-    padding: 1rem 0;
+    padding: @magicNumber 0;
 }
 
 .region-footer {
     column-count: 3;
-    column-gap: 2rem;
+    column-gap: 2em;
     column-rule: 1px solid @colorRulers;
     font-size: 0.75rem;
+    line-height: @lineHeightBase / unit(0.75rem) * ceil(unit(0.75rem) / @lineHeightBase);
     margin: 0 auto;
-    max-width: 900px;
+    text-align: center;
 
     img {
         float: right;
         margin: 0 -5px 0 5px;
         max-width: 70px;
-        width: 50%;
+        height: @magicNumber;
     }
 }
 
-div.site-footer > h4 {
+div.site-footer > h6 {
     display: inline;
 }
 
-div.site-footer > h4 ~ h4 {
+div.site-footer > h6 ~ h6 {
     white-space: pre;
 }
 
-div.site-footer > h4::before {
+div.site-footer > h6::before {
     content: '\A';
 }
 

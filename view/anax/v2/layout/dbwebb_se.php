@@ -90,8 +90,8 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 <?php if (regionHasContent("header") || regionHasContent("header-col-1")) : ?>
 <div class="outer-wrap outer-wrap-header">
     <div class="inner-wrap inner-wrap-header">
-        <div class="row">
-            <header class="region-header">
+        <!-- div class="row" -->
+            <header class="row region-header">
                 <!-- header -->
                 <?php if (regionHasContent("header")) : ?>
                 <div class="region-header-col-1">
@@ -120,7 +120,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
                 </div>
                 <?php endif; ?>
             </header>
-        </div>
+        <!-- /div -->
     </div>
 </div>
 <?php endif; ?>

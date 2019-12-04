@@ -1,0 +1,60 @@
+/* Stylesheet for design kmom03 */
+
+/* 1. Normalize and reset */
+@import "normalize.css/normalize.less";
+
+/* 2. Third Party CSS */
+// A responsive menu
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+// Vertical grid https://github.com/desinax/vertical-grid/
+@import "@desinax/vertical-grid/less/grid.less";
+// Horisontal/Typographical grid https://github.com/desinax/typographic-grid/
+@import "@desinax/typographic-grid/less/typography.less";
+@import "layout/typogrid_kmom03.less";
+
+/* 3. Fonts */
+// Font Awesome
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap');
+
+/* 4. Internal self contained modules */
+//@import "module/stylechooser.less";  // An example module
+
+/* 5. Base style for HTML elements on a general scale */
+@import "base/base_kmom03.less";
+
+/* 6. Mixins */
+//@import "mixin/clearfix.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-pinkblue22px.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Activate typographic grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+/* 7. Typography (fonts, colors, GUI) */
+@import "typography/typography.less";
+
+/* 8. Layout styles for general structure of header, navbar, main, footer
+      and other regions of the page including route specific styles. */
+@import "layout/layout_kmom03.less";
+@import "layout/regions.less";
+@import "layout/vgrid_kmom03.less";
+
+/* 9. Parts */
+@import "part/header_kmom03.less";
+@import "part/navigation_kmom03.less";
+@import "part/main_kmom03.less";
+@import "part/footer_kmom03.less";
+
+/* 10. Blocks */
+@import "block/blocks_kmom03.less";
+
+/* 11. State & Media queries for responsive design. */
+@import "layout/responsive_kmom03.less";
+@import "base/state_kmom03.less";

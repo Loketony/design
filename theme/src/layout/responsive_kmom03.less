@@ -1,0 +1,71 @@
+/* Layout for responsive style through media queries */
+
+// Screens < 650px
+@media screen and (max-width: 649px) {
+    .region-header-col-1 {
+        #desinax-vgrid.column(20);
+        #desinax-vgrid.push(1);
+    }
+
+    .region-header-col-2 {
+        display: none !important;
+        #desinax-vgrid.column(0);
+    }
+
+    .wrap-sidebar {
+        display: none !important;
+        #desinax-vgrid.column(0);
+    }
+
+    .region-main {
+        #desinax-vgrid.column(22);
+        #desinax-vgrid.push(1);
+    }
+
+    .rm-small {
+        display: block !important;
+    }
+
+    .rm-desktop {
+        display: none !important;
+    }
+}
+
+// Screens => 650px
+@media screen and (min-width: 650px) {
+    .region-main {
+        &.has-sidebar-left {
+            #desinax-vgrid.column(16);
+            #desinax-vgrid.push(1);
+        }
+
+        &.has-sidebar-right {
+            #desinax-vgrid.column(16);
+            #desinax-vgrid.push(1);
+        }
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(10);
+            #desinax-vgrid.push(1);
+        }
+    }
+}
+
+// Screens larger than 960px
+@media screen and (min-width: 960px) {
+    .third {
+        width: 960px * 8 / @columns;
+    }
+
+    .half {
+        width: 960px * 11 / @columns;
+    }
+
+    .quarter {
+        width: 960px * 6 / @columns;
+    }
+
+    .fifth {
+        width: 960px * 5 / @columns;
+    }
+}

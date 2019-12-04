@@ -17,7 +17,7 @@ views:
                 route: block/om-redovisa
 ---
 
-[FIGURE src=image/filmkatter.jpg?w=200 class="left" caption="Sajten är också lämplig för katter."]
+[FIGURE src="image/filmkatter.jpg" class="left fifth" caption="Sajten är också lämplig för katter."]
 
 # Om denna webbplats
 

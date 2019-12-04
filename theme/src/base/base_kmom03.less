@@ -3,9 +3,8 @@
  */
 @bgColorHtml: #424242;
 @bgColorBody: #b8c8b9;
-@colorBody: #000;
+@colorBody: #111;
 @colorRulers: lightgrey;
-@fontFamilyBody: sans-serif;
 
 *,
 *::before,
@@ -14,41 +13,32 @@
 }
 
 html {
-    font-size: 100%;
-    line-height: 1.4;
-    overflow: auto;
     width: 100%;
+    #desinax-hgrid.font(@fontSizeBody);
 }
 
 body {
+    padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
     background-color: @bgColorBody;
     color: @colorBody;
     font-family: @fontFamilyBody;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 0.25rem;
-}
-
-h1 {
-    font-size: 1.8rem;
+main {
+    margin-bottom: @magicNumber;
 }
 
 p {
-    margin: 0 0 1rem;
+    margin: 0 0 @magicNumber;
 }
 
 pre,
 code {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
     white-space: pre-wrap;
     word-wrap: break-word;
+    margin: 0 0 @magicNumber;
+    padding: 0;
+    border: 0;
 }
 
 img {
@@ -65,35 +55,35 @@ hr {
     background-color: @colorRulers;
     border: none;
     height: 1px;
-    margin-bottom: 1rem;
+    margin-bottom: @magicNumber;
 }
 
 blockquote {
     font-style: italic;
-    margin-bottom: 1rem;
     margin-left: 2rem;
 }
 
 figure {
     margin: 0;
     padding: 0;
+    min-width: 320px * 6 / @columns;
+    #desinax-vgrid.column(8);
 }
 
 figcaption {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
+    line-height: @lineHeightBase / unit(0.8rem) * ceil(unit(0.8rem) / @lineHeightBase) !important;
     font-style: italic;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: @magicNumber;
 }
 
 a {
     color: inherit;
 }
 
-fieldset {
-    margin-bottom: 1rem;
-}
-
 select {
+    display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -112,5 +102,9 @@ tr {
 }
 
 td {
-    padding: 0.4rem;
+    padding: @magicNumber / 2;
+}
+
+fieldset {
+    padding: @magicNumber;
 }

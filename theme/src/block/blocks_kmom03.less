@@ -1,0 +1,123 @@
+// Breadcrumb
+.region-breadcrumb {
+    #desinax-vgrid.column(22);
+    #desinax-vgrid.push(1);
+
+    margin-bottom: 0;
+}
+
+.breadcrumb-list > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-list > ul > li {
+    display: inline;
+    font-size: 0.8rem;
+    line-height: @lineHeightBase / unit(0.8rem) * ceil(unit(0.8rem) / @lineHeightBase);
+}
+
+.breadcrumb-list > ul > li:not(:last-of-type)::after {
+    content: ' > ';
+}
+
+// Flash
+.region-flash {
+    height: @magicNumber * 3;
+}
+
+.region-flash img {
+    width: 100%;
+    height: 100%;
+}
+
+// Logo
+.site-logo {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 0.81;
+}
+
+.site-logo-text {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-left: 0.4rem;
+}
+
+.site-logo > a {
+    display: flex;
+    text-decoration: none;
+}
+
+.site-logo > a > i {
+    font-size: 1.6rem;
+}
+
+.site-logo-text span:nth-child(2) {
+    transition: transform 1s linear;
+    transform-origin: top;
+    transform-style: preserve-3D;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.15rem;
+    text-align: center;
+}
+
+.site-logo-text span:nth-child(2) {
+    transform: rotateY(180deg);
+}
+
+// Next > < Previous
+.next-previous {
+    width: 100%;
+    height: @magicNumber;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.next-previous > div {
+    font-size: 0.8rem;
+    line-height: @lineHeightBase / unit(0.8rem) * ceil(unit(0.8rem) / @lineHeightBase);
+}
+
+.next {
+    flex: 1 0 auto;
+    text-align: right;
+}
+
+.previous {
+    flex: 1 0 auto;
+}
+
+// Sidebar
+.wrap-sidebar {
+    background-color: @bgColorNav;
+    border: 1px solid @bgColorNav;
+    border-radius: 5px;
+    color: @colorUpperNav;
+    font-size: 0.8rem;
+    line-height: @lineHeightBase / unit(0.8rem) * ceil(unit(0.8rem) / @lineHeightBase);
+    margin: (@magicNumber * 1.5) 0 (@magicNumber * 1.5);
+    padding: @magicNumber / 2;
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+// Table of content
+.toc > li {
+    margin-bottom: @magicNumber;
+}
+
+ul.toc {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

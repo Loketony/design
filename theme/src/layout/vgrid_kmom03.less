@@ -1,0 +1,74 @@
+// Vertical grid settings
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "flex";
+@maxWidth:      960px;
+@maxWidthNavs:  1200px;
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, @maxWidth);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(@maxWidth); // Max width for content
+}
+
+.inner-wrap-header,
+.inner-wrap-footer {
+    #desinax-vgrid.grid(@maxWidthNavs); // Header & Footer max width
+}
+
+.region-header-col-1 {
+    #desinax-vgrid.column(6);
+    #desinax-vgrid.push(1);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(15);
+}
+
+.region-header-col-3 {
+    #desinax-vgrid.column(1);
+}
+
+.region-flash {
+    #desinax-vgrid.column(24);
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(5);
+}
+
+.region-main {
+    #desinax-vgrid.column(22);
+    #desinax-vgrid.push(1);
+}
+
+.region-footer {
+    #desinax-vgrid.column(22);
+    #desinax-vgrid.push(1);
+}
+
+.third {
+    width: 100vw * 8 / @columns;
+}
+
+.half {
+    width: 100vw * 11 / @columns;
+}
+
+.quarter {
+    width: 100vw * 6 / @columns;
+}
+
+.fifth {
+    width: 100vw * 5 / @columns;
+}
