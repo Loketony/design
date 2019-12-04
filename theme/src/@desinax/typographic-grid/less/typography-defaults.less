@@ -34,14 +34,14 @@
 
 // fontsize code blocks
 //@fontSizeCodeInline:  1.25em;
-@fontSizeCodeBlock:   1.0em;
+@fontSizeCodeBlock:   1em;
 @lineHeightCodeBlock: 1.5;
 
- // fontsize super and subscripts
- @fontSizeSupSub: 0.75em;
+//fontsize super and subscripts
+@fontSizeSupSub: 0.75em;
 
- // fontsize smaller
- @fontSizeSmall: 0.875em;
+// fontsize smaller
+@fontSizeSmall: 0.875em;
 
 @colorTypographyMark: #000;
 @bgColorTypographyMark:  #ff9;
@@ -65,19 +65,15 @@
 
 @bgColorHr: #fff;
 
-
-
 #desinax-hgrid {
 
-    /**
-     * Mixins used when setting default fonts
-     */
+    // Mixins used when setting default fonts
     .showGrid(@gridImage) {
         background-image: url("@{gridImage}");
     }
 
     .showGridAlt(@gridColor: #f4e3d7) {
-        background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent (@magicNumber - 1), @gridColor (@magicNumber - 1), @gridColor @magicNumber);
+        background-image: repeating-linear-gradient(to bottom, transparent 0, transparent (@magicNumber - 1), @gridColor (@magicNumber - 1), @gridColor @magicNumber);
     }
 
     .font(@fontSize: 100.01%, @fontFamily: @fontFamilyBody) {
@@ -87,16 +83,12 @@
     .fontSize(@fontSize) {
         font-size: @fontSize;
         @lineHeightBase: unit((@magicNumber / @fontSizeBody));
-        line-height: @lineHeightBase / unit(@fontSize) * ceil(unit(@fontSize) / @lineHeightBase );
-    }
 
+        line-height: @lineHeightBase / unit(@fontSize) * ceil(unit(@fontSize) / @lineHeightBase);
+    }
     // 5/4 for smaller font-size, incremental leading.
 
-
-
-    /**
-     * Settings for headings H1-H6
-     */
+    // Settings for headings H1-H6
     .typographyHeadings() {
         h1,
         h2,
@@ -191,11 +183,7 @@
         }
     }
 
-
-
-    /**
-     * Text elements
-     */
+    // Text elements
     .typographyTextElements() {
         p {
             margin-bottom: @magicNumber;
@@ -252,11 +240,7 @@
         }
     }
 
-
-
-    /**
-     * Display source code.
-     */
+    // Display source code.
     .typographyCodeElements() {
         pre,
         code,
@@ -275,11 +259,11 @@
         }
 
         code {
+            font-size: @fontSizeCodeBlock;
             background-color: @bgColorCodeInline;
         }
 
         pre,
-        code,
         div.code,
         pre code {
             font-size: @fontSizeCodeBlock;
@@ -310,11 +294,7 @@
         }
     }
 
-
-
-    /**
-     * Lists
-     */
+    // Lists
     .typographyListElements() {
         //ul,ol{margin:0.6875em 1.5em 1.375em 0;padding-left:1.5em;}
 
@@ -372,8 +352,6 @@
             margin-left: 1.5em;
         }
     }
-
-
 
     /**
      * Tables. Because of the need for padding on TH and TD, the vertical rhythm
@@ -450,11 +428,7 @@
         }
     }
 
-
-
-    /**
-     * More typography elements
-     */
+    // More typography elements
     .typographyOtherElements() {
         hr {
             position: relative;
@@ -476,17 +450,13 @@
         }
     }
 
-
-
-    /**
-     * Enable all default typographic elements.
-     */
-     .activateDefaultTypography() {
-         #desinax-hgrid.typographyHeadings();
-         #desinax-hgrid.typographyTextElements();
-         #desinax-hgrid.typographyCodeElements();
-         #desinax-hgrid.typographyListElements();
-         #desinax-hgrid.typographyTableElements();
-         #desinax-hgrid.typographyOtherElements();
-     }
+    // Enable all default typographic elements.
+    .activateDefaultTypography() {
+        #desinax-hgrid.typographyHeadings();
+        #desinax-hgrid.typographyTextElements();
+        #desinax-hgrid.typographyCodeElements();
+        #desinax-hgrid.typographyListElements();
+        #desinax-hgrid.typographyTableElements();
+        #desinax-hgrid.typographyOtherElements();
+    }
 }

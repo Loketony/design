@@ -1,5 +1,13 @@
 # Revision history
 
+### v3.0.1 (2019-12-04)
+* CSS bug fixes; errors found **@dbwebb** using **W3C-validator**
+* Make **@desinax**-plugins **typographic-grid** and **vertical-grid** pass both **CSS-Lint** and **W3C-validators**
+* Turn off `safe-area-inset-*` in CSS, it doesn't pass W3C-validator for some reason
+* Change so when main menu and side-bars are hidden they use 1 column in the vgrid (otherwise it will lead to negative width)
+* Make `normalize.css` pass **CSS-Lint**
+* Add `viewport-fit=cover` to `<meta name="viewport">` @ `view/anax/v2/layout/dbwebb_se.php` cause it's required for `safe-area-inset-*`, but that had to be turned off anyway!
+
 ### v3.0.0 (2019-11-19--2019-12-04)
 * Add `kmom03.less` in `theme/src`
 * Change to `kmom03.min.css` to default CSS in: `config/page.php`

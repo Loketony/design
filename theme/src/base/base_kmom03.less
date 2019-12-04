@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+    //padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     background-color: @bgColorBody;
     color: @colorBody;
     font-family: @fontFamilyBody;
@@ -39,6 +39,10 @@ code {
     margin: 0 0 @magicNumber;
     padding: 0;
     border: 0;
+}
+
+code {
+    line-height: normal;
 }
 
 img {

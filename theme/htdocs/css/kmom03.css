@@ -571,29 +571,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 #desinax-hgrid {
   /**
-     * Mixins used when setting default fonts
-     */
-  /**
-     * Settings for headings H1-H6
-     */
-  /**
-     * Text elements
-     */
-  /**
-     * Display source code.
-     */
-  /**
-     * Lists
-     */
-  /**
      * Tables. Because of the need for padding on TH and TD, the vertical rhythm
      * on table cells has to be 1.5*@magic-number.
-     */
-  /**
-     * More typography elements
-     */
-  /**
-     * Enable all default typographic elements.
      */
 }
 /**
@@ -5014,7 +4993,6 @@ html {
   font: 16px/1.375 Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 body {
-  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
   background-color: #b8c8b9;
   color: #111;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -5032,6 +5010,9 @@ code {
   margin: 0 0 22px;
   padding: 0;
   border: 0;
+}
+code {
+  line-height: normal;
 }
 img {
   max-width: 100%;
@@ -5235,10 +5216,10 @@ samp {
   padding-right: 1px;
 }
 code {
+  font-size: 0.8rem;
   background-color: #eee;
 }
 pre,
-code,
 div.code,
 pre code {
   font-size: 0.8rem;
@@ -5467,22 +5448,21 @@ h6 {
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
   background-size: 100% auto;
-}
-@media (min-width: 960px) {
-  .vgrid .inner-wrap {
-    background-size: 960px auto;
-  }
+  /*
+        @media (min-width: @maxWidth + 0px) {
+            background-size: @maxWidth auto;
+        }
+        */
 }
 .vgrid .inner-wrap.inner-wrap-header,
 .vgrid .inner-wrap.inner-wrap-footer {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
   background-size: 100% auto;
-}
-@media (min-width: 100%) {
-  .vgrid .inner-wrap.inner-wrap-header,
-  .vgrid .inner-wrap.inner-wrap-footer {
-    background-size: 100% auto;
-  }
+  /*
+        @media (min-width: @maxWidth + 0px) {
+            background-size: @maxWidth auto;
+        }
+        */
 }
 .inner-wrap {
   margin-right: auto;
@@ -5757,14 +5737,14 @@ ul.toc {
   .region-header-col-2 {
     display: none !important;
     flex: 0 0 auto;
-    width: -1.04166667%;
+    width: 3.125%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
   .wrap-sidebar {
     display: none !important;
     flex: 0 0 auto;
-    width: -1.04166667%;
+    width: 3.125%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
