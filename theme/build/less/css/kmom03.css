@@ -4993,6 +4993,7 @@ html {
   font: 16px/1.375 Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 body {
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
   background-color: #b8c8b9;
   color: #111;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -5391,9 +5392,17 @@ h6 {
   z-index: -99;
 }
 .content {
-  margin-top: 44px;
+  margin-top: 22px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 22px;
 }
 .content::-webkit-scrollbar {
   display: none;
@@ -5696,11 +5705,11 @@ div.site-footer > p {
   line-height: 1.71875;
 }
 .next {
-  flex: 1 0 auto;
+  flex: auto;
   text-align: right;
 }
 .previous {
-  flex: 1 0 auto;
+  flex: auto;
 }
 .wrap-sidebar {
   background-color: #154918;
@@ -5723,6 +5732,52 @@ ul.toc {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+table.color-palette {
+  border-collapse: separate;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+table.color-palette tbody > tr {
+  border-spacing: 1rem 0;
+  background-color: #333;
+  display: flex;
+  padding: 0 0.5rem 1rem;
+  justify-content: space-around;
+}
+table.color-palette tbody > tr > th {
+  color: #f8fafa;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 0.5rem 0 0;
+}
+table.color-palette tbody > tr > td {
+  display: block;
+  padding: 0;
+  --cellwidth: calc(25% - 1rem);
+  width: var(--cellwidth);
+  padding-top: var(--cellwidth);
+}
+table.color-palette.three > tbody > tr > td {
+  --cellwidth: calc(33% - 1rem);
+  width: var(--cellwidth);
+  padding-top: var(--cellwidth);
+}
+table.color-palette.five > tbody > tr > td {
+  --cellwidth: calc(20% - 1rem);
+  width: var(--cellwidth);
+  padding-top: var(--cellwidth);
+}
+hr {
+  background-color: #333;
+  background-image: none !important;
+  height: 1px;
+}
+hr::after {
+  content: none;
 }
 /* 11. State & Media queries for responsive design. */
 /* Layout for responsive style through media queries */
@@ -5760,6 +5815,18 @@ ul.toc {
   }
   .rm-desktop {
     display: none !important;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.57142857;
+  }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.96428571;
+  }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.14583333;
   }
 }
 @media screen and (min-width: 650px) {
@@ -5816,4 +5883,18 @@ ul.toc {
   margin: 0;
   padding: 0;
   padding-left: 22px;
+}
+#rm-menu.rm-clicked {
+  width: 100% !important;
+  height: 100% !important;
+}
+a.rm-button.rm-clicked .rm-button-face-2 {
+  color: #9fb129;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rm-modal {
+  overflow-y: hidden !important;
 }

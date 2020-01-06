@@ -15,28 +15,28 @@ return [
             "title" => "Första sidan, börja här.",
         ],
         [
-            "text" => "Redovisning",
+            "text" => "Redovisningar",
             "url" => "redovisning",
             "title" => "Redovisningstexter från kursmomenten.",
             "submenu" => [
                 "items" => [
                     [
-                        "text" => "Kmom01",
+                        "text" => "Kmom01: Ramverk, innehåll, style",
                         "url" => "redovisning/kmom01",
                         "title" => "Redovisning för kmom01.",
                     ],
                     [
-                        "text" => "Kmom02",
+                        "text" => "Kmom02: LESS och responsivitet",
                         "url" => "redovisning/kmom02",
                         "title" => "Redovisning för kmom02.",
                     ],
                     [
-                        "text" => "Kmom03",
+                        "text" => "Kmom03: Grid, layout, typografi",
                         "url" => "redovisning/kmom03",
                         "title" => "Redovisning för kmom03.",
                     ],
                     [
-                        "text" => "Kmom04",
+                        "text" => "Kmom04: Färg",
                         "url" => "redovisning/kmom04",
                         "title" => "Redovisning för kmom04.",
                     ],
@@ -72,6 +72,20 @@ return [
             "text" => "Verktyg",
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
+        ],
+        [
+            "text" => "Rapporter",
+            "url" => "rapport",
+            "title" => "Rapporter.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Stockholmsmuseers sajter 2019",
+                        "url" => "rapport/fargschema",
+                        "title" => "Rapport om museisajter 2019.",
+                    ],
+                ],
+            ],
         ],
         [
             "text" => "Test",

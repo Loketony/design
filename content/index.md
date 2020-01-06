@@ -9,4 +9,4 @@ Jag är en sapiansk homonoid primat i den biologiska fasen. Är dock en gammal c
 
 Bor i vår vackra huvudstad sedan ett antal år tillbaka.
 
-![Stockholm](image/stockholm.jpg)
+![Stockholm](image/stockholm.jpg "Stockholm")

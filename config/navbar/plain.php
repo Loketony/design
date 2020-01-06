@@ -5,7 +5,7 @@
 return [
     // Use for styling the menu
     "class" => "my-navbar",
- 
+
     // Here comes the menu items/structure
     "items" => [
         [
@@ -14,7 +14,7 @@ return [
             "title" => "Första sidan, börja här.",
         ],
         [
-            "text" => "Redovisning",
+            "text" => "Redovisningar",
             "url" => "redovisning",
             "title" => "Redovisningstexter från kursmomenten.",
         ],
@@ -32,6 +32,11 @@ return [
             "text" => "Verktyg",
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
+        ],
+        [
+            "text" => "Rapporter",
+            "url" => "rapport",
+            "title" => "Rapporter framtagna i kursen.",
         ],
     ],
 ];
