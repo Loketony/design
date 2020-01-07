@@ -1,5 +1,5 @@
 /*!
- * Style sheet kmom03.
+ * Minimalistic web design.
  */
 
 /* 1. Normalize and reset */
@@ -13,19 +13,18 @@
 @import "@desinax/vertical-grid/less/grid.less";
 // Horisontal/Typographical grid https://github.com/desinax/typographic-grid/
 @import "@desinax/typographic-grid/less/typography.less";
-@import "layout/typogrid_kmom03.less";
+@import "layout/typogrid_kmom04.less";
 
 /* 3. Fonts */
 // Font Awesome
 @import "@fortawesome/fontawesome-free/less/fontawesome.less";
 @import "@fortawesome/fontawesome-free/less/solid.less";
-@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap');
 
-/* 4. Internal self contained modules */
-//@import "module/stylechooser.less";  // An example module
+/* 4. Variables */
+@import "variables/minimalistic.less";
 
 /* 5. Base style for HTML elements on a general scale */
-@import "base/base_kmom03.less";
+@import "base/base_kmom04.less";
 
 /* 6. Mixins */
 //@import "mixin/clearfix.less";
@@ -44,13 +43,13 @@
 
 /* 8. Layout styles for general structure of header, navbar, main, footer
       and other regions of the page including route specific styles. */
-@import "layout/layout_kmom03.less";
+@import "layout/layout_kmom04.less";
 @import "layout/regions.less";
 @import "layout/vgrid_kmom03.less";
 
 /* 9. Parts */
 @import "part/header_kmom03.less";
-@import "part/navigation_kmom03.less";
+@import "part/navigation_kmom04.less";
 @import "part/main_kmom03.less";
 @import "part/footer_kmom03.less";
 

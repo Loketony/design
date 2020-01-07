@@ -1,0 +1,109 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+body {
+    padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+    background-color: @bgColorBody;
+    color: @colorBody;
+    font-family: @fontFamilyBody;
+}
+
+main {
+    margin-bottom: @magicNumber;
+}
+
+p {
+    margin: 0 0 @magicNumber;
+}
+
+pre,
+code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0 0 @magicNumber;
+    padding: 0;
+    border: 0;
+}
+
+code {
+    line-height: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol,
+ul,
+dl {
+    list-style-position: inside;
+}
+
+hr {
+    background-color: @colorRulers;
+    border: none;
+    height: 1px;
+    margin-bottom: @magicNumber;
+}
+
+blockquote {
+    font-style: italic;
+    margin-left: 2rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    min-width: 320px * 6 / @columns;
+    #desinax-vgrid.column(8);
+}
+
+figcaption {
+    font-size: 0.8rem !important;
+    line-height: @lineHeightBase / unit(0.8rem) * ceil(unit(0.8rem) / @lineHeightBase) !important;
+    font-style: italic;
+    width: 100%;
+    margin-bottom: @magicNumber;
+}
+
+a {
+    color: inherit;
+}
+
+select {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+table {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+td {
+    padding: @magicNumber / 2;
+}
+
+fieldset {
+    padding: @magicNumber;
+}

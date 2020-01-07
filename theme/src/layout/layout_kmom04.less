@@ -1,0 +1,45 @@
+/* Layout style for general structure of header, navbar, main, footer
+   and other regions of the page including route specific styles. */
+// Wrap
+.wrap-all {
+    min-width: 300px;
+}
+
+.outer-wrap {
+    min-width: 300px;
+    width: 100%;
+}
+
+.outer-wrap-main {
+    z-index: -99;
+}
+
+// content (all except main navbar & footer)
+.content {
+    margin-top: @magicNumber;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+    margin-top: @magicNumber;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+// Row
+.row {
+    #desinax-vgrid.row();
+}
+
+// Article
+.article {
+    margin-bottom: @magicNumber;
+}

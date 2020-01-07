@@ -62,7 +62,7 @@ Startsida:
 </table>
 
 <br>
-Färgskalan är monokrom, svartvit, alltså en gråskala, med en senapsgul accentfärg.
+Färgskalan är monokrom, svartvit/akromatisk, alltså en gråskala, med en senapsgul accentfärg.
 
 Färg | Vanliga känsloassociationer
 ------|------
@@ -110,7 +110,7 @@ Startsida:
 </table>
 
 <br>
-Färgskalan är monokrom, i en bred gråskala som får en att associera till svartvitt foto, med en klargrön accentfärg.
+Färgskalan är monokrom, i en bred akromatisk gråskala som får en att associera till svartvitt foto, med en klargrön accentfärg.
 
 Färg | Vanliga känsloassociationer
 ------|------
@@ -155,7 +155,7 @@ Startsida:
 </table>
 
 <br>
-Färgskalan är monokrom, i en gråskala, med flera accentfärger; rött/rosa och orange.
+Färgskalan är monokrom, i en akromatisk gråskala, med flera accentfärger; rött/rosa och orange.
 
 Färg | Vanliga känsloassociationer
 ------|------

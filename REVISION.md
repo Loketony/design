@@ -1,5 +1,11 @@
 # Revision history
 
+### v4.0.0 (2020-01-07)
+* Add new section: Reports
+* Add report about Stockholm's museum web sites 2019
+* Add new themes: minimalistic, dark, and colorful
+* Report text **kmom04**
+
 ### v3.0.1 (2019-12-04)
 * CSS bug fixes; errors found **@dbwebb** using **W3C-validator**
 * Make **@desinax**-plugins **typographic-grid** and **vertical-grid** pass both **CSS-Lint** and **W3C-validators**

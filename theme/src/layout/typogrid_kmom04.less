@@ -1,0 +1,94 @@
+/**
+ * Typographic grid variables
+ */
+// Magic number and base fontsize
+@magicNumber:  22px;  // 22px || 24px
+@fontSizeBody: 16px;
+
+// Monospace
+@fontFamilyCourier: "Courier New", Courier, monospace;
+// Serif
+@fontFamilyCambria: Cambria, Georgia, Times, 'Times New Roman', serif;
+// Sans-serif
+@fontFamilyVerdana: Verdana, Geneva, sans-serif;
+
+/*
+    Default font-families
+    BlinkMacSystemFont  San Francisco: recent versions of iOS, macOS, tvOS, watchOS
+    system-ui
+    macOS 10.11-10.12   -apple-system,
+    Windows 6+          Segoe UI,
+    Android 4+          Roboto,
+    Ubuntu 10.10+       Ubuntu,
+    Gnome 3+            Cantarell,
+    KDE Plasma 5+       Noto Sans,
+    fallback            sans-serif,
+*/
+@fontDefaultFamilies: BlinkMacSystemFont, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+// Emoji fonts
+@fontEmojiFamilies: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// Bubblegum
+@fontFamilyBubblegum: 'Bubblegum Sans', cursive;
+// Bonbon
+@fontFamilyBonbon: 'Bonbon', cursive;
+
+// Default font-families
+@fontFamilyHeadings: @fontFamilyBubblegum;
+@fontFamilyBody:     @fontDefaultFamilies;
+@fontFamilyCode:     "monospace";
+
+// header h1-h6 font sixe
+@fontSizeH1: 2.375rem;
+@fontSizeH2: 1.875rem;
+@fontSizeH3: 1.75rem;
+@fontSizeH4: 1.1rem;
+@fontSizeH5: 1rem;
+@fontSizeH6: 0.8rem;
+
+// header h1-h6 borders
+@colorH1BorderBottom: #666;
+@colorH2BorderBottom: #CCC;
+@colorH3BorderBottom: #EEE;
+@colorH4BorderBottom: #EEE;
+@colorH5BorderBottom: #EEE;
+@colorH6BorderBottom: #EEE;
+@borderSizeH1: 0;
+@borderSizeH2: 0;
+@borderSizeH3: 0;
+@borderSizeH4: 0;
+@borderSizeH5: 0;
+@borderSizeH6: 0;
+
+// fontsize code blocks
+@fontSizeCodeBlock: 0.8rem;
+@lineHeightBase: unit((@magicNumber / @fontSizeBody));
+@lineHeightCodeBlock: @lineHeightBase / unit(@fontSizeCodeBlock) * ceil(unit(@fontSizeCodeBlock) / @lineHeightBase);
+
+// fontsize super and subscripts
+@fontSizeSupSub: 0.75rem;
+
+// fontsize smaller
+@fontSizeSmall: 0.875rem;
+
+@colorTypographyMark:   #000;
+@bgColorTypographyMark: #ff9;
+
+@colorBlockquoteBorder: @colorRulers;
+@sizeBlockquoteBorder:  0;
+
+@borderColorCodeInline: #ccc;
+@bgColorCodeInline:     #eee;
+@bgColorCodeBlock:      #eee;
+@colorCodeBlockBorder:  @colorRulers;
+@borderSizeCodeblock:   0;
+
+@colorTableHeaderBorder:    #aaa;
+@sizeTableHeaderBorder:     1px;
+@bgColorTableStripe:        #fafafa;
+@colorTableRowBorder:       @colorRulers;
+@colorTableRowHover:        #000;
+@bgColorTableRowHover:      #f6f6f6;
+@colorTableRowBorderHover:  #666;
+
+@bgColorHr: red;
+@gridColor: #000;
